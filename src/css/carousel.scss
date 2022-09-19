@@ -1,0 +1,71 @@
+.carousel{
+  position: relative;
+    padding: 40px 0 50px;
+  &__title{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    color: #3A3A3A;
+  }
+  &__desc{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    margin: 21px 0 35px;
+  }
+  &__text{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: right;
+    color: #212121;
+    position: absolute;
+    top: 21px;
+    right: 40px;
+  }
+  &__btns{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 14px;
+    z-index: 9;
+  }
+  &__btn{
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(7, 7, 7, 0.60);
+    transition: .5s;
+    &:hover{
+      transform: scale(1.4);
+      transition: .5s;
+    }
+}
+
+.swiper {
+  display: flex;
+  column-gap: 10px;
+  position: relative;
+  width: 370px;
+  height: 550px;
+
+  &__wrapper {
+    position: relative;
+  }
+}
+}

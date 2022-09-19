@@ -1,0 +1,86 @@
+.choice{
+  background: #b3b3b7;
+  &__rooms-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-card{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  }
+  &__rooms-content-title{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    text-decoration-line: underline;
+  }
+  &__rooms-content-title1{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    text-decoration-line: underline;
+  }
+
+  &__room{
+    width: 370px;
+    height: 320px;
+    background: url("../../src/images/choiceBG.png") center/cover no-repeat;
+    transition: .5s;
+    &:hover{
+      transform: scale(0.95);
+      transition: .5s;
+    }
+  }
+  &__room1{
+    width: 370px;
+    height: 320px;
+    background: url("../../src/images/choiceBG1.png") center/cover no-repeat;
+    transition: .5s;
+    &:hover{
+      transform: scale(0.95);
+      transition: .5s;
+    }
+  }
+  &__room2{
+    width: 370px;
+    height: 320px;
+    background: url("../../src/images/choiceBG2.png") center/cover no-repeat;
+    transition: .5s;
+    &:hover{
+      transform: scale(0.95);
+      transition: .5s;
+    }
+  }
+  &__room3{
+    width: 370px;
+    height: 320px;
+    background: url("../../src/images/choiceBG3.png") center/cover no-repeat;
+    transition: .5s;
+    &:hover{
+      transform: scale(0.95);
+      transition: .5s;
+    }
+  }
+  &__link-title1{
+    color: #fff;
+  }
+}

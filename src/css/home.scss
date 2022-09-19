@@ -1,0 +1,30 @@
+.home {
+  position: relative;
+  padding: 250px 0 360px;
+  background: url("../../src/images/homeBG.png") center/cover no-repeat;
+  &__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  &__btn{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: transparent;
+    padding: 7px 40px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+  }
+}

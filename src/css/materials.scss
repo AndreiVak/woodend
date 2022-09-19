@@ -1,0 +1,48 @@
+.materials{
+  position: relative;
+  padding: 57px 0 72px;
+  &__block-content{
+    display: flex;
+    &-card{
+      width: 100%;
+      height: 100%;
+      &:nth-of-type(even){
+        background: #F8F8F8;
+      }
+    }
+    &-title{
+      font-family: 'Cardo', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+      color: #000000;
+    }
+    &-desc{
+      font-family: 'Cardo',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      color: #000000;
+      margin: 12px 0 26px;
+    }
+    &-text{
+      font-family: 'Cardo', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 15px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #000000;
+      margin-bottom: 49px;
+    }
+    &-img{
+      margin: 56px 0 35px;
+      text-align: center;
+    }
+  }
+}

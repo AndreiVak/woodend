@@ -1,0 +1,27 @@
+.reviews{
+  padding: 83px 0 55px;
+  &__block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__block-desc{
+    font-family: 'Cardo', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #020202;
+  }
+  &__block-description{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin: 37px 0 0;
+  }
+}

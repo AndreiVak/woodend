@@ -1,0 +1,100 @@
+.product{
+    position: relative;
+    background: #ffffff;
+    padding: 115px 0 0;
+  &__cards{
+    display: flex;
+    position: relative;
+    column-gap: 50px;
+    margin-bottom: 50px;
+    &:nth-child(even){
+      flex-direction: row-reverse;
+    }
+  }
+  &__card-text{
+    position: relative;
+    width: calc(30% - 20px);
+  }
+  &__card-title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 56px;
+    text-align: right;
+    color: #000000;
+  }
+  &__card-subtitle{
+    font-family: 'Cardo', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: right;
+    color: #000000;
+    margin: 5px 0 19px;
+  }
+  &__card-price{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: right;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  &__card-item{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: right;
+    color: #525252;
+    margin:0 -30px 36px;
+  }
+  &__card-properties{
+    font-family: 'Cardo',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: right;
+    color: #54595F;
+    margin-bottom: 40px;
+  }
+  &__card-sale{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: right;
+    color: #000000;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+  &__card-new{
+    font-family: 'Cardo', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    color: #BC1414;
+  }
+  &__card-awards{
+    position: absolute;
+    bottom: -40px;
+    right: -6px;
+  }
+
+  &__card-image{
+    width: calc(70% - 20px);
+  }
+  &__card-img{
+    width: 100%;
+  }
+
+}

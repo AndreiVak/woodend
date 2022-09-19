@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container{
+  position: relative;
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@import "home";
+@import "info";
+@import "choice";
+@import "product";
+@import "carousel";
+@import "carousel";
+@import "reviews";
+@import "materials";
+@import "partners";
+
+.sticky{
+  position: relative;
+}
+
+.header{
+  background: #f1d5b2;
+  padding: 23px 0 48px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    &-item{
+      font-family: 'Cardo' , sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 23px;
+      text-align: center;
+      color: #000000;
+      position: relative;
+      cursor: pointer;
+      &::before{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: -2px;
+        left: -15px;
+        transition: .5s;
+      }
+      &:hover::before{
+        width: calc(100% + 20px);
+      }
+    }
+    &-icons{
+      font-size: 20px;
+    }
+  }
+}
+
+.footer{
+  position: relative;
+  padding: 70px 0 0;
+  background: #E9E9E9;
+  &__nav{
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    align-items: start;
+    &-content{
+      width: calc(20% - 10px);
+    }
+    &-title{
+      font-family: 'Cardo', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    &-list{
+      margin-top: 40px;
+      &-item{
+        font-family: 'Cardo', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 15px;
+        position: relative;
+        cursor: pointer;
+        &::before{
+          content: '';
+          width: 0;
+          height: 2px;
+          background: #000;
+          position: absolute;
+          bottom: -2px;
+          left: 25px;
+          transition: .5s;
+        }
+        &:hover::before{
+          width: calc(100% - 50px);
+        }
+      }
+    }
+  }
+  &__subs{
+    width: calc(40% - 15px);
+    position: relative;
+    display: inline-block;
+    &-desc{
+      font-family: 'Cardo', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+  &__btn{
+    padding: 5px 41px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin: 40px 0 35px;
+  }
+  &__reviews-img{
+    display: block;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__nav-icons{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__nav-icon{
+    font-size: 30px;
+    color: #000;
+  }
+  &__link{
+    color: #020202;
+  }
+  &__payment{
+    position: relative;
+    display: flex;
+    padding: 40px 0;
+    &-text{
+      font-family: 'Cardo', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+    &-icons{
+      font-size: 40px;
+      column-gap: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 876px) {
+  .header{
+    position: relative;
+    &__logo{
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__nav{
+      justify-content: flex-start;
+      column-gap: 50px;
+    }
+    &__list{
+      display: flex;
+      transition: .5s;
+      flex-direction: column;
+      width: 0;
+      position: fixed;
+      height: 100vh;
+      background: #aba9a9;
+      z-index: 120;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      row-gap: 20px;
+      .header__list-item{
+        font-size: 0;
+        text-align: center;
+      }
+      &_active{
+        width: 100%;
+        transition: .5s;
+        .header__list-item{
+          font-size: 25px;
+          transition: .5s;
+        }
+      }
+    }
+    .burger{
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: -10px;
+      right: 20px;
+      z-index: 121;
+      &__line{
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        border-radius: 1.5px;
+        background: #FFFFFF;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        &::before{
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          border-radius: 1.5px;
+          background: #FFFFFF;
+          left: 0;
+          top: -10px;
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          border-radius: 1.5px;
+          background: #FFFFFF;
+          left: 0;
+          top: 10px;
+        }
+      }
+      &_active{
+        .burger__line{
+          background: transparent;
+          &:before{
+            top: -10px;
+            transform: rotate(45deg);
+            transition: .3s;
+          }
+          &:after{
+            top: -10px;
+            transform: rotate(-45deg);
+            transition: .3s;
+          }
+        }
+      }
+    }
+    .icon-search {
+      display: none;
+    }
+    .icon-user-o {
+      display: none;
+    }
+    .icon-cart-plus {
+      display: none;
+    }
+  }
+  .product{
+    &__card-title{
+      font-size: 23px;
+      line-height: 36px;
+    }
+    &__card-subtitle{
+      font-size: 15px;
+      line-height: 27px;
+    }
+    &__card-price{
+      font-size: 13px;
+      line-height: 18px;
+    }
+    &__card-item{
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0 -10px 26px;
+    }
+    &__card-properties{
+      font-size: 13px;
+      line-height: 17px;
+      margin-bottom: 20px;
+    }
+    &__card-sale{
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .carousel{
+    .swiper{
+      margin-left: 50px;
+    }
+    .last__child{
+      display: none;
+    }
+  }
+  .partners__img{
+    position: absolute;
+    left: 64%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  footer{
+    &__nav-icon {
+      font-size: 25px;
+      color: #000;
+    }
+  }
+}

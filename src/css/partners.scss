@@ -1,0 +1,20 @@
+.partners{
+  padding: 100px 0 80px;
+  &__content{
+    display: block;
+  }
+  &__text{
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #454545;
+    margin-bottom: 41px;
+  }
+  &__img{
+    margin: 0 -120px;
+  }
+}

@@ -1,0 +1,5 @@
+.home {
+  position: relative;
+  padding: 250px 0 360px;
+  background: url("https://www.youtube.com/embed/N7UNgmGJ9Cg?controls=0&rel=0&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fwoodendot.com&widgetid=1") center/cover no-repeat;
+}
